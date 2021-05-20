@@ -1,0 +1,1055 @@
+{
+	"info": {
+		"_postman_id": "b0ee7562-f3be-4844-9cc7-2124dd950175",
+		"name": "MRJG_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "People",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/people/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"people",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Vys",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Giedrius",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1234/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/people/update/2?name=Vytenis&lastname=Giedraitis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"people",
+								"update",
+								"2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Vytenis"
+								},
+								{
+									"key": "lastname",
+									"value": "Giedraitis"
+								},
+								{
+									"key": "email",
+									"value": "vytenis@pastas.lt",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "+370695195915",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/people/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"people",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/student/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"student",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Vytenis\",\r\n    \"lastname\":\"Giedraitis8\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"student"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Naujas",
+									"disabled": true
+								},
+								{
+									"key": "lastname",
+									"value": "Mokinys",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/student/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"student",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/teacher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/teacher/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"teacher",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Vytenis\",\r\n    \"lastname\":\"Testas4\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/teacher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"teacher"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "NuTikaiTikrai",
+									"disabled": true
+								},
+								{
+									"key": "lastname",
+									"value": "NaujasMokytojas",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/teacher/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"teacher",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"classroom_id\":\"5\",\r\n    \"attach\":true\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/teacher/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"teacher",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parent",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/parent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"parent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/parent/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"parent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Vardenis\",\r\n    \"lastname\":\"Pavardenis\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/parent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"parent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/parent/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"parent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Class",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/class",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/class/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/class/students/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"students",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"group\":\"1\",\r\n    \"name\":\"B\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/class",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Schoolmaster",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"schoolmaster_id\":\"3\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/class/schoolmaster/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"schoolmaster",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Students",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student_id\":\"4\",\r\n    \"class_id\":\"3\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/class/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"student"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Distribute All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/class/student/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"student",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Groups",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/class/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/class/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"class",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subjects",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/subject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/subject/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"subject",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Matematika\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/subject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/subject/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"subject",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Classroom",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/classroom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"classroom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/classroom/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"classroom",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"202\",\r\n    \"subject_id\":\"3\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/classroom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"classroom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subject_id\":\"2\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/classroom/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"classroom",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/classroom/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"classroom",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grade",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/grade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"grade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/grade/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"grade",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"student_id\":\"4\",\r\n    \"subject_id\":\"1\",\r\n    \"grade\":\"5\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:1234/grade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"grade"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/grade/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"grade",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stream",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1234/stream",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"stream"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1234"
+				}
+			},
+			"response": []
+		}
+	]
+}
